@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BlueDemo</string>
+    <string name="scan_start">扫描开始</string>
+    <string name="scan_end">扫描完成</string>
+    
+    <string name="not_support_ble">你的设备不支持BLE</string>
+    <string name="title">蓝牙小助手</string>
+    <string name="device_name">设备名称:</string>
+    <string name="device_addr">设备地址:</string>
+    <string name="device_uuid">设备UUID:</string>
+</resources>

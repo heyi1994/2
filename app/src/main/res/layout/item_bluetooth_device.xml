@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        android:layout_margin="2dp"
+        android:layout_height="70dp" >
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               style="@style/text_view_default_style"
+               android:id="@+id/tv_device_name"
+               android:text="@string/device_name"
+               />
+           <TextView
+               android:id="@+id/m_device_name"
+               style="@style/text_view_default_style"
+               android:focusable="true"
+               android:text="无敌酷炫的小米6S2"
+               android:layout_marginLeft="5dp"
+               />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/device_addr"
+
+                android:id="@+id/tv_device_addr"
+                style="@style/text_view_default_style" />
+            <TextView
+                android:id="@+id/m_device_addr"
+                style="@style/text_view_default_style"
+                android:focusable="true"
+                android:text="无敌酷炫的小米6S"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
