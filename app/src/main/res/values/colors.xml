@@ -6,4 +6,8 @@
     <color name="blue">@android:color/holo_blue_light</color>
     <color name="white">@android:color/white</color>
     <color name="black">@android:color/black</color>
+
+    <color name="main">#EFEFEF</color>
+
+    <color name="btn_bg">#DDDEE2</color>
 </resources>

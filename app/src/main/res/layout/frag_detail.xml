@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main"
+>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue">
+
+        <TextView
+            android:id="@+id/m_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/main"
+        android:padding="5dp"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/ed_msg"
+            android:layout_width="wrap_content"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:background="@drawable/shape_ed_bg"
+            android:drawablePadding="1dp" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="60dp"
+            android:clickable="false"
+            android:layout_marginLeft="5dp"
+            android:text="@string/send"
+            android:background="@drawable/sel_btn"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

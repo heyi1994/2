@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
 import android.widget.Toast
 import com.blue.bluedemo.R
+import com.blue.bluedemo.wiget.CustomToast
 
 /**
  * Author: Heyi.
@@ -17,6 +18,7 @@ import com.blue.bluedemo.R
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         immersiveStatus()
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
         setContentView(getLayoutId())
         init()
     }
@@ -47,16 +49,18 @@ import com.blue.bluedemo.R
      * show short toast
      */
     protected fun showShortToast(msg:String){
-        Toast.makeText(this,msg,
-                Toast.LENGTH_SHORT).show()
+        CustomToast(this,Toast.LENGTH_SHORT,msg).show()
     }
 
     /**
      * show long toast
      */
     protected fun showLongToast(msg:String){
-        Toast.makeText(this,msg,
-                Toast.LENGTH_LONG).show()
+        CustomToast(this,Toast.LENGTH_LONG,msg).show()
+    }
+
+    protected fun startFrag(id:Int,fragment: BaseFragment,tag:String){
+        fragmentManager.beginTransaction().replace(id,fragment,tag).commit()
     }
 
 }
